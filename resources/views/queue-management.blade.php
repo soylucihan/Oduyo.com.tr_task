@@ -58,3 +58,10 @@
         </div>
     </div>
 </container>
+<style>
+    .action {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+</style>

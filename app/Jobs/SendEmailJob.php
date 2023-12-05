@@ -29,8 +29,7 @@ class SendEmailJob implements ShouldQueue
       // Use the Mail facade to send the email
       // The 'to' method specifies the recipient's email address
       // The 'send' method sends the email using the SendEmailTest instance
-      Mail::to($this->details['email'])->send($email);
-
+      Mail::to($this->details['email'])->send($email->from('cihan@deepol.uz'));
   }
   
 }
