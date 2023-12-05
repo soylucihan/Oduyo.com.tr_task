@@ -11,9 +11,9 @@ class SendEmailTest extends Mailable
         $this->details = $details;
     }
     public function build()
-    {
-        return $this->from('cihan@deepol.uz') 
-                    ->subject('Welcome')
-                    ->view('mail')->with($this->details);
-    }
+{
+    return $this->from('cihan@deepol.uz') // Set the sender email address
+                ->subject('Welcome') // Set the email subject
+                ->view('mail')->with($this->details); // Set the email body using a view template and pass data to the view
+}
 }
